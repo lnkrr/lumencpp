@@ -30,7 +30,7 @@ To parse a file, use the `lumen::parse_file` function:
 #include <iostream>
 #include <string>
 
-#include <lumencpp/document.h>
+#include <lumencpp/lumen.h>
 
 int main() {
     try {
@@ -50,7 +50,7 @@ To parse a string, use the `lumen::parse` function:
 #include <iostream>
 #include <string>
 
-#include <lumencpp/document.h>
+#include <lumencpp/lumen.h>
 
 int main() {
     try {
@@ -72,7 +72,7 @@ You can construct documents using syntax similar to `std::map`.
 ```cpp
 #include <iostream>
 
-#include <lumencpp/document.h>
+#include <lumencpp/lumen.h>
 
 int main() {
     lumen::Document document{
