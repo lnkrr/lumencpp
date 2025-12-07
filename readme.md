@@ -2,24 +2,22 @@
 
 Lumen config file parser for C++20.
 
-## Build
+## CMake
 
-Clone the repository:
+Use `FetchContent` to include the library in your project:
 
-```bash
-$ git clone https://github.com/veevol/lumencpp && cd lumencpp
-```
+```cmake
+include(FetchContent)
 
-Build with `make`:
+FetchContent_Declare(
+    lumencpp
+    GIT_REPOSITORY https://github.com/lnkrr/lumencpp.git
+    GIT_TAG v0.1
+)
 
-```bash
-$ make
-```
+FetchContent_MakeAvailable(lumencpp)
 
-To install the library system-wide, run:
-
-```bash
-$ sudo make install
+target_link_libraries(<target> lumencpp)
 ```
 
 ## Usage
