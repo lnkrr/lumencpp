@@ -1,4 +1,4 @@
-# lumencpp
+![lumencpp](assets/logo.svg)
 
 Lumen config file parser for C++20.
 
